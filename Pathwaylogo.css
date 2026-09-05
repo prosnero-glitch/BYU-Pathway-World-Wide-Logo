@@ -5,22 +5,32 @@
   align-items: center;
   justify-content: center;
   height: 30vh;
+  position: relative;
+  z-index: 1;
   background-color: orange;
   width:200px;
   
   margin: 20px;
   
 }
-.nav-item:hover{
+
+
+
+.nav-item:hover {
 cursor: pointer;
-background-color: rgba(0, 0, 0, 0.116);
+background-color: orange;
 }
 
+.btn2:hover,h2:hover{
+    cursor: pointer;
+    background-color: orange;
+    width: 60%;
 
-.highlight:hover {
+}
+.nav-item:active{
     background-color: rgba(0, 0, 0, 0.116);
-    border-radius: 8px;
 }
+
 .text-center{
     text-align: center;
 }
@@ -75,15 +85,24 @@ h3 {
 .btn2{
     background-color:orange;
     color: black;
-    border: 20px solid orange;
-    width: 30%;
-    padding: 2px 26px;
+    border: 0px solid ;
+    width: 60%;
+    height: 80px;
+    padding: 2px 19px;
     font-size: 1rem;
     cursor: pointer; 
     display: flex;
   margin: 0 auto;
   align-items: center;
   justify-content: center;
+  transition: background-color 0.2s ease, color 0.2s ease, transform 0.2s ease;
+
+}
+
+.btn2:hover {
+  background-color: #d97706;
+  color:black;
+  transform: translateY(-2px);
     
 }
 .icon img {
@@ -115,12 +134,45 @@ h3 {
   display: block;
 }
 
+.navlist2 {
+  position: fixed;
+  top: calc(20px + 18vh);
+  left: 0;
+  right: 0;
+  z-index: 0;
+  width:150%;
+  border-width: 100%;
+  box-sizing: border-box;
+  padding: 12px 18px;
+  background-color: #facc15;
+}
+
+.nav-list2 {
+  display: flex;
+  gap: 0px;
+  justify-content: space-around;
+  margin: 0;
+  padding: 0;
+  list-style:none;
+  ;
+}
+
+.nav-list2 a {
+  color: #000;
+  text-decoration: none;
+  white-space: nowrap;
+}
+
 
 .nav-toggle {
   display: flex;
   text-box-trim: center;
-  align-items: center;
-  gap: 8px;
+  align-items: left;
+  justify-content: left;
+  width: 120px;
+  padding: 6px 8px;
+  box-sizing: border-box;
+  gap: 13px;
 }
 
 .nav-item + .nav-item {
@@ -164,5 +216,9 @@ h3 {
   .nav-item + .nav-item::before {
     left: -4px;
     height: 12px;
+  }
+  .navlist2 {
+    top: calc(20px + 10vh);
+    left: 10px;
   }
 }
