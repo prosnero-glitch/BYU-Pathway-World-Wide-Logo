@@ -138,9 +138,10 @@ h3 {
 .nav-list {
   display: flex;
   gap: 20px;
-  font-size: large;
+  font-size: x-large;
   margin: 10;
-  padding: 10;
+  padding: 10px 30px;
+  width:0px,22px;
   text-decoration: black;
   list-style: none;
   grid-column: 1 / -1;
@@ -151,13 +152,25 @@ h3 {
   text-decoration: none;
   display: block;
 }
-
 .nav-actions {
   display: flex;
   grid-column: 1 / -1;
   justify-content: flex-end;
   gap: 20px;
   width: 90%;
+}
+
+.nav-toggle {
+  background: transparent;
+  border: 1px solid #000;
+  cursor: pointer;
+  padding: 10px 10px;
+  transition: background-color 0.2s ease, transform 0.2s ease;
+}
+
+.nav-toggle:hover {
+  background-color: #dd7e18;
+  transform: translateY(-2px);
 }
 
 .navlist2 {
@@ -170,7 +183,7 @@ h3 {
   width:100%;
   border-width: 10%;
   box-sizing: border-box;
-  padding: 12px 18px;
+  padding: 10px 60px;
   background-color: #facc15;
   font-size: 30px;
   
