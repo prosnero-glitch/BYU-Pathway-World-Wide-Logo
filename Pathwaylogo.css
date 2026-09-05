@@ -18,11 +18,13 @@
 
 .nav-item:hover {
 cursor: pointer;
-background-color: orange;
+background-color: #ffa500;
+
 }
 .nav-item2:hover{
     cursor: pointer;
-    background-color:orange;
+    background-color:#dd7e18;
+    
     
 }
     
@@ -83,15 +85,15 @@ h3 {
   position: absolute;
   top: 0;
   right: 0;
-  font-family: "monospace", monospace;
+  font-family: "Times", 'Times New Roman', Times, serif;
   text-decoration: black;
-  padding: 12px 20px;
-  font-size: 1.1rem;
-  width: 50%;
+  padding: 12px 0 12px 20px;
+  font: size 10px;
+  width: 60%;
   display: grid;
   grid-template-columns: max-content max-content;
   justify-content: end;
-  column-gap: 8px;
+  column-gap: 2px;
   row-gap: 8px;
   
   
@@ -102,6 +104,7 @@ h3 {
     color: black;
     border: 0px solid ;
     width: 60%;
+    font-weight:600;
     height: 80px;
     padding: 2px 19px;
     font-size: 1rem;
@@ -135,9 +138,9 @@ h3 {
 .nav-list {
   display: flex;
   gap: 20px;
-  font-size: xx-large;
-  margin: 0;
-  padding: 0;
+  font-size: large;
+  margin: 10;
+  padding: 10;
   text-decoration: black;
   list-style: none;
   grid-column: 1 / -1;
@@ -149,25 +152,36 @@ h3 {
   display: block;
 }
 
+.nav-actions {
+  display: flex;
+  grid-column: 1 / -1;
+  justify-content: flex-end;
+  gap: 20px;
+  width: 90%;
+}
+
 .navlist2 {
   position: fixed;
   top: calc(20px + 18vh);
   left: 0;
   right: 0;
+  width:;
   z-index: 0;
   width:100%;
   border-width: 10%;
   box-sizing: border-box;
   padding: 12px 18px;
   background-color: #facc15;
+  font-size: 30px;
+  
 }
 
 .nav-list2 {
   display: flex;
-  gap: 100px;
+  gap: 5rem;
   justify-content: right;
   margin: 0;
-  padding: 0;
+  padding: 0.5px;
   font-family: Arial 12px bold;
   list-style:none;
   ;
@@ -180,16 +194,8 @@ h3 {
 }
 
 
-.nav-toggle {
-  display: flex;
-  text-box-trim: center;
-  align-items: left;
-  justify-content: left;
-  width: 120px;
-  padding: 6px 8px;
-  box-sizing: border-box;
-  gap: 13px;
-}
+
+
 
 .nav-item + .nav-item {
   position: relative;
