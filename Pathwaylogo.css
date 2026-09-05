@@ -139,8 +139,8 @@ h3 {
   display: flex;
   gap: 20px;
   font-size: x-large;
-  margin: 10;
-  padding: 10px 30px;
+  margin: 0;
+  padding: 10px 60px;
   width:0px,22px;
   text-decoration: black;
   list-style: none;
@@ -156,7 +156,7 @@ h3 {
   display: flex;
   grid-column: 1 / -1;
   justify-content: flex-end;
-  gap: 20px;
+  gap: 40px;
   width: 90%;
 }
 
